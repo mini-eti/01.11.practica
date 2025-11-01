@@ -8,6 +8,7 @@ void desrtoy(int ** mtx, size_t created)
  delete[] mtx;
 }
 
+
 int ** create(size_t rows, size_t cols)
 {
 int ** mtx = new int *[rows];
@@ -27,6 +28,7 @@ catch (const std:: bad_alloc &e)
 return mtx;
 }
 
+
 void construct(int ** mtx, size_t rows, size_t cols, int init)
 {
  for (size_t i = 0; i < rows; ++i)
@@ -37,6 +39,8 @@ void construct(int ** mtx, size_t rows, size_t cols, int init)
    }
  }
 }
+
+void intput(int ** mtx, size_t rows, 
 
 int main()
 {
